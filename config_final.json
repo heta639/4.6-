@@ -1,0 +1,95 @@
+{
+  "accountDatabase": {
+    "uri": "mongodb://localhost:27017",
+    "collection": "lunarcore"
+  },
+  "gameDatabase": {
+    "uri": "mongodb://localhost:27017",
+    "collection": "lunarcore",
+    "useInternal": true
+  },
+  "internalMongoServer": {
+    "address": "localhost",
+    "port": 27017,
+    "filePath": "database.mv",
+    "useSameDatabase": true
+  },
+  "keystore": {
+    "path": "./keystore.p12",
+    "password": ""
+  },
+  "httpServer": {
+    "useSSL": false,
+    "regionListRefresh": 60000,
+    "bindAddress": "0.0.0.0",
+    "bindPort": 80,
+    "publicAddress": "103.236.85.188",
+    "publicPort": null
+  },
+  "gameServer": {
+    "id": "lunar rail test",
+    "name": "Lunar Core",
+    "description": "A LunarCore server",
+    "kcpInterval": 40,
+    "kcpTimeout": 30,
+    "bindAddress": "0.0.0.0",
+    "bindPort": 23301,
+    "publicAddress": "103.236.85.188",
+    "publicPort": null
+  },
+  "serverOptions": {
+    "autoCreateAccount": true,
+    "sceneMaxEntities": 500,
+    "maxCustomRelicLevel": 15,
+    "unlockAllChallenges": true,
+    "spendStamina": true,
+    "staminaRecoveryRate": 600,
+    "staminaReserveRecoveryRate": 1080,
+    "startTrailblazerLevel": 1,
+    "autoUpgradeWorldLevel": true,
+    "language": "CHS",
+    "defaultPermissions": [],
+    "maxPlayers": -1,
+    "serverFriendInfo": {
+      "name": "Server",
+      "signature": "Type /help for a list of commands",
+      "level": 1,
+      "headIcon": 201001,
+      "chatBubbleId": 0,
+      "displayAvatars": [],
+      "avatarId": 1001,
+      "avatarLevel": 1
+    }
+  },
+  "welcomeMail": {
+    "title": "欢迎来到肝服",
+    "sender": "Server",
+    "content": "欢迎来到 Lunar Core 纯肝服！收下开局起步包，之后的角色、光锥和资源都靠你自己肝出来吧。",
+    "attachments": [
+      { "id": 2, "count": 100000 },
+      { "id": 101, "count": 360 },
+      { "id": 102, "count": 180 }
+    ]
+  },
+  "serverTime": {
+    "spoofTime": false,
+    "spoofDate": "15-01-2024 08:00:00"
+  },
+  "serverRates": {
+    "exp": 10.0,
+    "credit": 10.0,
+    "jade": 10.0,
+    "material": 10.0,
+    "equip": 10.0
+  },
+  "logOptions": {
+    "commands": true,
+    "connections": true,
+    "packets": false,
+    "webServer": true,
+    "gameServer": true
+  },
+  "loginOptions": {
+    "accountName": "player"
+  }
+}
