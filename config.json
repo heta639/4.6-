@@ -1,0 +1,76 @@
+{
+  "accountDatabase": {
+    "uri": "mongodb://localhost:27017",
+    "collection": "lunarcore",
+    "useInternal": true
+  },
+  "gameDatabase": {
+    "uri": "mongodb://localhost:27017",
+    "collection": "lunarcore",
+    "useInternal": true
+  },
+  "internalMongoServer": {
+    "address": "localhost",
+    "port": 27017,
+    "filePath": "database.mv",
+    "useSameDatabase": true
+  },
+  "keystore": {
+    "path": "/keystore.p12",
+    "password": ""
+  },
+  "httpServer": {
+    "useSSL": false,
+    "regionListRefresh": 60000,
+    "bindAddress": "0.0.0.0",
+    "bindPort": 80,
+    "publicAddress": "103.236.85.188",
+    "publicPort": 80
+  },
+  "gameServer": {
+    "id": "lunar rail test",
+    "name": "Lunar Core",
+    "description": "A LunarCore server",
+    "kcpInterval": 40,
+    "kcpTimeout": 30,
+    "bindAddress": "0.0.0.0",
+    "bindPort": 23301,
+    "publicAddress": "103.236.85.188",
+    "publicPort": 23301
+  },
+  "serverOptions": {
+    "autoCreateAccount": true,
+    "sceneMaxEntities": 500,
+    "maxCustomRelicLevel": 15,
+    "unlockAllChallenges": true,
+    "spendStamina": true,
+    "staminaRecoveryRate": 600,
+    "staminaReserveRecoveryRate": 1080,
+    "startTrailblazerLevel": 1,
+    "autoUpgradeWorldLevel": true,
+    "language": "CHS",
+    "defaultPermissions": 0,
+    "maxPlayers": -1
+  },
+  "serverFriendInfo": {
+    "name": "Server",
+    "signature": "Type /help for a list of commands",
+    "level": 1,
+    "headIcon": 201001,
+    "chatBubbleId": 0,
+    "displayAvatars": []
+  },
+  "welcomeMail": {
+    "title": "Welcome to a LunarCore server",
+    "sender": "Server",
+    "content": "Welcome to Lunar Core! Please take these items as a starter",
+    "attachments": [
+      { "id": 2, "count": 1000000 },
+      { "id": 101, "count": 100 },
+      { "id": 102, "count": 100 },
+      { "id": 1001, "count": 1 }
+    ]
+  },
+  "resourceDir": "./resources",
+  "dataDir": "data"
+}
